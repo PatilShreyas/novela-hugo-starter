@@ -11,21 +11,8 @@ title = "Fire flow"
 
 This is body
 
-<iframe src="https://gist.github.com/PatilShreyas/1ae626c2a8d0e4fd04ccaa71739f265a"
-  style="width:100%; height:300px;"
-></iframe>
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-```
+{{< highlight kt "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+	private var ss = new Ss()
+{{< / highlight >}}
 
 Thanks!
