@@ -6,6 +6,5 @@ featured: true
 social:
 - title: My Site
   url: https://shreyaspatil.dev
-draft: true
 
 ---
