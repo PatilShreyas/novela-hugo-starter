@@ -11,7 +11,7 @@ title = "Fire flow"
 
 This is body
 
-```kt
+```java
 private lateinit var mAdapter: PostsAdapter
 
 fun main() {
