@@ -19,7 +19,7 @@ fields:
 - name: avatar
   type: file
   config:
-    maxSize: 250
+    maxSize: 
   label: Avatar Image
 - name: social
   type: field_group_list
@@ -43,5 +43,3 @@ fields:
   type: boolean
   label: Featured Author
   description: Feature this author on the home page
-pages:
-- content/authors/Shreyas-Patil/shreyas-patil.md
