@@ -11,12 +11,17 @@ title = "Fire flow"
 
 This is body
 
-```java
-private lateinit var mAdapter: PostsAdapter
-
-fun main() {
-	mAdapter = new Adapter()
-}
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
 ```
 
 Thanks!
