@@ -1,77 +1,116 @@
-# Hugo Novela
+# Newsroom Theme
 
-A port of [Narative](https://www.narative.co/)'s Gatsby theme [Novela](https://www.narative.co/labs/novela/)
+This a simple, minimalistic theme, which is inspired by [Apple's Newsroom page](https://www.apple.com/newsroom/). You won't find a single reference of monolithic libraries such as `jquery`, `bootstrap`, `bulma`.
 
-**This theme requires Hugo > 0.55.0 and has been tested with Hugo v0.62.2**
+All the templates herein use *grid css*, *flexbox* & *vanilla js*. You may,however, proceed and tweak everything as you wish.
 
-![](https://raw.githubusercontent.com/forestryio/hugo-theme-novela/master/images/tn.png)
+![Hugo Newsroom Theme](https://github.com/onweru/newsroom/blob/master/images/screenshot.png)
 
-<a href="https://app.forestry.io/quick-start?repo=forestryio/novela-hugo-starter&engine=hugo&version=0.62.2">
-    <img alt="Import this project into Forestry" src="https://assets.forestry.io/import-to-forestryK.svg" />
-</a>
+## Features
 
-## Customization
+* Blog
+* Modern
+* Responsive
+* Deeplinks
+* Dark Mode
+* Syntax highlighting 
 
-### Logo
+### Deeplinks
 
-Override `/themes/novela/layouts/partials/icons/ui/logo.html` with your own file at `/layouts/partials/icons/ui/logo.html`; include your logo in SVG format for desktop and mobile formats. 
+For all content published using markdown, deeplinks will be added to the pages so that you can share with precision :smiley: Just   hover on a heading and the link button will pop. Click it to copy.
 
-Novela supports light and dark mode. To have your logo respond in kind, add `class="change-fill"` to the svg path(s).
+## Installation
 
+Add this theme as a Git submodule inside your Hugo site folder:
 
-
-### Socials
-
-In order for the Socials to be surfaced in Forestry, you should copy the theme's `config/_default/social.yaml` to your project.
-
-### Authors
-
-You should register authors as a taxonomy in your project's `config.yaml``
-
-```yaml
-taxonomies:
-  author: authors
+```bash
+git submodule add https://github.com/onweru/newsroom.git themes/newsroom
 ```
 
-#### Creating authors
-Add the following file to your content directory and Front Matter example.
+> Theme hugo sass and hugo-extended version.
 
-```yaml
-# /content/authors/firstname-lastname/_index.md
----
-title: Dennis Brotzky
-bio: |
-  Written by You. This is where your author bio lives. Share your work, your
-  joys and of course, your Twitter handle.
-avatar: /images/dennis-brotzky.jpg
-featured: true
-social:
-  - title: unsplash
-    url: https://unsplash.com
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
----
+## Configuration
+
+You can configure the site using as follows:
+
+1. **General Information**
+
+    Use the file `config.toml`.
+
+2. **menu**, **footer**
+
+    See the **data** files inside the `data/` directory.
+
+## Start publishing
+
+Follow the `exampleSite/`; specifically, the [content](https://github.com/onweru/newsroom/tree/master/exampleSite/content/post) directory
+
+### Dark Mode
+
+Today most operating systems & browsers support dark mode. Like twitter, which automatically turns into dark mode when the user chooses darkmode, this theme does the same thing.
+
+If the user wants to opt in or out of darkmode, there's a UI control for that too in the menu 😊.
+
+![Dark Mode](https://github.com/onweru/newsroom/blob/master/images/screenshot-dark.png)
+
+### Custom 404 Page
+
+| Normal Mode | Dark Mode |
+|--- | ---|
+| ![404 page](https://github.com/onweru/newsroom/blob/master/images/404.png) | ![404 page on dark Mode](https://github.com/onweru/newsroom/blob/master/images/404-dark.png)|
+
+### Syntax highlighting
+
+| Normal Mode | Dark Mode |
+|--- | ---|
+| ![404 page](https://github.com/onweru/newsroom/blob/master/images/syntax.png) | ![404 page on dark Mode](https://github.com/onweru/newsroom/blob/master/images/syntax-dark.png)|
+
+Depending on your fancy, you can opt to [use Chroma](./exampleSite/config.toml#L17-L27).
+
+### I want to use disqus
+
+Some folks may want to use disqus on their site. In fact, there [was an issue](https://github.com/onweru/newsroom/issues/2) for that express purpose.
+
+To enable disqus on your site, simply, add the line below to you `config.toml` file. If you're working off the [exampleSite](https://github.com/onweru/newsroom/tree/master/exampleSite), the line is [already there](https://github.com/onweru/newsroom/blob/ad9b7a9f7ea266b539f846a2f3bdf080e648bb84/exampleSite/config.toml#L15-L16); just uncomment it.
+
+```toml
+disqusShortname = "yourdiscussshortname"
 ```
+> remember to edit the `yourdiscussshortname` appropriately.
 
-#### Assigning authors to posts.
-Simply add the name of the author to the "authors" field:
+From your disqus dashboard, set your scripts `color scheme` to __auto__. See screenshot below
 
-```yaml
-authors:
-  - Dennis Brotzky
-  - Thiago Costa
-```
-### Newsletter CTA
+![](https://github.com/onweru/newsroom/blob/master/images/disqus-color-scheme.png)
 
-This theme includes a shortcode for a newsletter callout form that you can add to any page. 
-It uses [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Visit the Formspree site to get get going add your Formspree email to your shortcode like this:
+## Custom Shortcodes
 
-```
-{{< subscribe email="your@email.com" >}}
-```
+This theme ships with two custom shortcodes (they both use positional parameters):
+
+1. __Video__
+    This shortcode can be used to embed a youtube video with custom styling. It takes a solo positional parameter.
+    
+    ```
+    ...
+    {{< video "youtubeVideoID" >}}
+    ...
+    ```
+
+2. __Picture__
+    You want to use darkmode images when darkmode is enabled on a device and a regular image on lightmode? It takes 3 positional parameter
+
+    Store these images in the `static/images` directory. 
+    
+    ```
+    ...
+    {{< picture "lightModeImage.png" "darkModeImage.png" "Image alt text" >}}
+    ...
+    ```
+
+## From the same creator
+
+1. [Swift Theme](https://github.com/onweru/hugo-swift-theme)
+2. [Compose Theme](https://github.com/onweru/compose)
+
+## License
+
+This theme is available under the [MIT license](https://github.com/onweru/newsroom/blob/master/LICENSE.md).
