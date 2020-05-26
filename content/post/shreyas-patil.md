@@ -19,7 +19,7 @@ void main()
 }
 ```
 
-```java
+```kotlin
 package dev.shreyaspatil.firebase.coroutines.utils
 
 import com.google.firebase.firestore.CollectionReference
