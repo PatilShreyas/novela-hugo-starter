@@ -1,16 +1,16 @@
 ---
 baseURL: https://example.com
 languageCode: en-us
-title: Hugo Novela
+title: Shreyas Patil
 pygmentsstyle: monokai
 theme: novela
 paginate: 6
 social:
-  twitter: "#"
-  github: "#"
-  instagram: "#"
-  linkedin: "#"
+  twitter: "https://twitter.com/imShreyasPatil"
+  github: "https://github.com/PatilShreyas"
+  instagram: "https://instagram.com/_patilshreyas/"
+  linkedin: "https://www.linkedin.com/in/patil-shreyas"
   dribbble: "#"
-  youtube: "#"
+  youtube: "https://www.youtube.com/channel/UCKD_CXX0Yd449_Ns2I1cXcg"
 taxonomies:
   author: authors
