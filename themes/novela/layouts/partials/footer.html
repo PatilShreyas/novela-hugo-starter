@@ -1,7 +1,10 @@
-<footer class = 'footer wrap pale'>
-  <p>&copy;&nbsp;<span class = 'year'></span>&nbsp;{{ .Site.Title }}</p>
-  <p>{{ i18n "designed_by" .Site.Data.designer | safeHTML }}</p>
-</footer>
-{{ $scriptPath := "js/index.js" }}
-{{ $scripts := resources.Get $scriptPath | resources.ExecuteAsTemplate $scriptPath . | resources.Minify | resources.Fingerprint "sha512" }}
-<script src = '{{ $scripts.Permalink }}'></script>
+<div class="footer-gradient"></div>
+    <div class="section narrow">
+      <div class="footer-hr"></div>
+      <div class="footer-container">
+        <div class="footer-text">
+          © {{ dateFormat "2006" now }} {{ .Site.Title }}
+        </div>
+        {{ partial "social-links/social-links.html" . }}
+    </div>
+</div>

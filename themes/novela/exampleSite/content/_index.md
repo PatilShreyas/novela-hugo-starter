@@ -1,5 +1,7 @@
 ---
-title: ""
-date: 2019-08-25T00:52:59+03:00
-# draft: true
+hero:
+  heading: Welcome to Novela, the simplest way to start publishing with Hugo.
+  maxWidthPX: 652
+seo:
+  image: /images/hero-2.jpg
 ---

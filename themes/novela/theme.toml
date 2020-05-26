@@ -1,12 +1,18 @@
-name = "newsroom"
+name = "Hugo Novela"
 license = "MIT"
-licenselink = "https://github.com/onweru/newsroom/blob/master/LICENSE.md"
-description = "A simple open source theme for publishing multi-purpose content"
-homepage = "https://github.com/onweru/newsroom"
-tags = ["blog", "simple", "dark", "minimalist", "fast", "disqus", "syntax highlighting"]
-features = ["blog", "simple", "dark", "minimalist", "fast", "disqus", "syntax highlighting"]
-min_version = "0.63.0"
+licenselink = "https://github.com/forestryio/hugo-theme-novela/blob/master/LICENSE"
+description = "A Hugo port of the Novela theme by Narative"
+homepage = "https://hugo-novela-forestry.netlify.com/"
+tags = ["blog"]
+features = ["dark mode", "grid view"]
+min_version = "0.55.0"
 
 [author]
-    name ="weru"
-    homepage = "https://github.com/onweru/newsroom"
+    name = "The New Dynamic"
+    homepage = "https://www.thenewdynamic.com/"
+
+# If porting an existing theme
+[original]
+    author = "Narative"
+    homepage = "https://www.narative.co/"
+    repo = "https://github.com/narative/gatsby-theme-novela"
