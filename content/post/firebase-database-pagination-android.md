@@ -228,23 +228,28 @@ Use it as `FirebaseRecyclerPagingAdapter#refresh()`.
 This method clears all the items in RecyclerView and reloads the data again from the beginning.  
 See the demo for a method.
 
+```java
             mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
                 public void onRefresh() {
                     mAdapter.refresh();
                 }
             });
+```
 
 ### Set Adapter
 
 Finally, Set adapter to RecyclerView.
 
+```java
     mRecyclerView.setAdapter(mAdapter);
+```
 
 ### Lifecycle
 
 At last, To begin populating data, call `startListening()` method. `stopListening()` stops the data being loaded.
 
+```java
         //Start Listening Adapter
         @Override
         protected void onStart() {
@@ -258,6 +263,7 @@ At last, To begin populating data, call `startListening()` method. `stopListenin
             super.onStop();
             mAdapter.stopListening();
         }
+```
 
 _Thus, we have implemented the **Firebase Recycler Pagination**._ 😃
 
