@@ -278,7 +278,7 @@ If you need any help get in touch with me on [Facebook](https://www.facebook.com
 
 * GitHub Repository:
 
-  [https://github.com/PatilShreyas/FirebaseRecyclerPagination](https://github.com/PatilShreyas/FirebaseRecyclerPagination "https://github.com/PatilShreyas/FirebaseRecyclerPagination")
+  [https://github.com/PatilShreyas/FirebaseRecyclerPagination](https://github.com/PatilShreyas/FirebaseRecyclerPagination)
+  
 * Firebase Open Source:
-
-  [https://firebaseopensource.com/projects/patilshreyas/firebaserecyclerpagination/](https://firebaseopensource.com/projects/patilshreyas/firebaserecyclerpagination/ "https://firebaseopensource.com/projects/patilshreyas/firebaserecyclerpagination/")
+ [https://firebaseopensource.com/projects/patilshreyas/firebaserecyclerpagination/](https://firebaseopensource.com/projects/patilshreyas/firebaserecyclerpagination/)
