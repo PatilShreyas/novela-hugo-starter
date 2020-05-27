@@ -20,9 +20,7 @@ _FirebaseRecyclerPagingation_ Library binds Firebase Realtime Database Query to 
 
 **See Output :**
 
-![](https://miro.medium.com/max/253/1*0B8ZLJrE7avCzNjZeC-SLg.gif =253x450)
-
-Demo of _Firebase Database Pagination_ Library Implementation
+!\[1_0B8ZLJrE7avCzNjZeC-SLg.gif =253x450\](https://miro.medium.com/max/253/1_0B8ZLJrE7avCzNjZeC-SLg.gif =253x450 "1*0B8ZLJrE7avCzNjZeC-SLg.gif =253x450")
 
 # 💻 Getting Started :
 
@@ -36,6 +34,7 @@ In this app, you are showing a paginated list of Posts. Posts will load in `Recy
 
 ## Gradle Setup
 
+```gradle
     dependencies {
     
         //RecyclerView
@@ -54,6 +53,7 @@ In this app, you are showing a paginated list of Posts. Posts will load in `Recy
         //Firebase Pagination Library
         implementation 'com.shreyaspatil:FirebaseRecyclerPagination:1.0.1'
     }
+```
 
 ## App Setup
 
