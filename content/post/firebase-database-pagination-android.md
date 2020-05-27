@@ -2,7 +2,7 @@
 date = 2019-04-07T18:30:00Z
 excerpt = "Android Library to implement Paging support for Realtime Database in RecyclerView. This library is developed by me. It will help you to implement database in pages."
 hero = "/images/firebasepagination.png"
-timeToRead = 1
+timeToRead = 4
 title = "Firebase Database Pagination — Android 🔥"
 
 +++
