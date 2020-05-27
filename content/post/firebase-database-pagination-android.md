@@ -20,7 +20,8 @@ _FirebaseRecyclerPagingation_ Library binds Firebase Realtime Database Query to 
 
 **See Output :**
 
-!\[1_0B8ZLJrE7avCzNjZeC-SLg.gif =253x450\](https://miro.medium.com/max/253/1_0B8ZLJrE7avCzNjZeC-SLg.gif =253x450 "1*0B8ZLJrE7avCzNjZeC-SLg.gif =253x450")
+  
+![](https://miro.medium.com/1*0B8ZLJrE7avCzNjZeC-SLg.gif)
 
 # 💻 Getting Started :
 
